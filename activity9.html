@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Looping Through Arrays</title>
+  </head>
+  <body>
+
+    <script>
+
+var usrAnswer = prompt("r, p, s?");
+var answers = [ "r", "p", "s"];
+var pcAnswer = answers[Math.floor(Math.random() * answers.length)];
+console.log(pcAnswer)
+
+if (pcAnswer === usrAnswer) { 
+    console.log("Tie")
+
+}  else if (pcAnswer === "r" && usrAnswer === "s") {
+    console.log("Lose")
+
+} else if (pcAnswer === "s" && usrAnswer === "p") {
+    console.log("Lose")
+
+} else if (pcAnswer === "p" && usrAnswer === "r") {
+    console.log("Lose")
+
+} else {
+  console.log("Won")  
+};
+
+
+
+    </script>
+    
+  </body>
+</html>
+
